@@ -1,0 +1,40 @@
+ h4{
+    color:#4a4843;
+font-size: 20px;
+margin-bottom: 10px;
+margin-top:2px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+  .heading h5 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #473e3e;
+    font-size: 7vw;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    opacity: 0.05;
+    pointer-events: none;
+    margin: 0px;
+    padding: 0px;
+  }
+      .heading h2 {
+        font-weight: 600!important;
+        color: #292929;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom:70px;
+      }
+      .heading-border {
+        height: 4px;
+        width:40px;
+        margin-bottom:10px;
+        margin-top: 0px;
+        display: inline-block;
+        background-color:#473e3e;
+      }

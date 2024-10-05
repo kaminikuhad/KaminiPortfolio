@@ -1,0 +1,70 @@
+<!-- <div class="section" id="experience">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Work Experience</div>
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-12">
+                        <section class="py-5"  >
+                            <ul class="timeline" *ngFor="let exp of workexp" >
+                              <li class="timeline-item mb-5" style="    background-color: lightgray;">
+                                <h5 class="fw-bold">{{exp.company}}</h5>
+                                <p class="text-muted mb-2 fw-bold">{{exp.timeline}}, {{exp.location}}</p>
+                                <h4> {{exp.role}}</h4>
+                                
+                                <ul>
+                                    <li *ngFor="let work of exp.work">{{work}}</li>
+                                  </ul>
+                              </li>
+
+                            </ul>
+                          </section>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container-fluid mt-5" style="background-color: white;">
+    <div class="container">
+        <div class="heading">
+            <h5>EXPERINCE</h5>
+            <h2><span class="heading-border"></span> WORK EXPERINCE<span class="heading-border"></span></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul *ngFor="let exp of workexp">
+                            <div class="card shadow p-3  bg-white rounded" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="card-body">
+                                    <div>
+                                        <h3 class="fw-bold d-flex justify-content-center" style="color: #473e3e;">
+                                            {{exp.company}}</h3>
+                                        <div class="d-flex">
+                                            <p class=" mb-2 fw-bold col-lg-6" style="color: #473e3e;"> {{exp.role}}</p>
+                                            <p class="text-muted mb-2 fw-bold col-lg-6" style="color: #473e3e;">
+                                                {{exp.timeline}}, {{exp.location}}</p>
+                                        </div>
+                                        
+                                            <span *ngFor="let work of exp.work">
+                                                <h5><b>Project: {{work.project}}</b></h5>
+                                                <h6><b>{{work.role}}</b></h6>
+                                                <ul>
+                                                    <li *ngFor="let worklist of work.workData">{{worklist}}</li>
+                                                </ul>
+                                                <div style="display: flex">
+                                                <h6 style="padding-top: 2px;"><b>Environment:&nbsp;</b></h6><span>{{work.environment}}</span>
+                                                </div>
+                                            </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

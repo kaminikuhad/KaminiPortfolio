@@ -1,0 +1,54 @@
+<!-- <div class="section" id="education">
+    <div class="container cc-education">
+      <div class="h4 text-center mb-4 title">Education</div>
+      <div *ngFor="let education of educationDetails">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-education-header">
+                <p>{{education.from_to_year}}</p>
+                <div class="h5">{{education.education}}</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                
+                 <h4 class="category">{{education.institution}}
+                 </h4>
+                 <span>{{education.info}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid mt-5" style="background-color:  white;">
+    <div class="container">
+        <div class="heading">
+            <h5>EDUCATION</h5>
+            <h2><span class="heading-border"></span> EDUCATION<span class="heading-border"></span></h2>
+        </div>
+        <div *ngFor="let education of educationDetails">
+          <div class="card shadow  bg-white rounded mb-3">
+            <div class="row">
+              <div class="col-md-3 rounded" style="background-color: #473e3e; color: white;" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>{{education.from_to_year}}</p>
+                  <div class="h5">{{education.education}}</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  
+                   <h4 class="category">{{education.institution}}
+                   </h4>
+                   <span>{{education.info}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
