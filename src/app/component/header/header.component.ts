@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter<string>();
 
   addNewItem(value: string) {
-    console.log(value)
     this.newItemEvent.emit(value);
   }
 }
