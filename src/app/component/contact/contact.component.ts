@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../app.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import emailjs from '@emailjs/browser'
 
 @Component({
   selector: 'app-contact',
@@ -28,7 +29,20 @@ export class ContactComponent implements OnInit {
       });
     }
   
-    onSubmit(form: FormGroup) {
-     
+    async onSubmit() {
+      emailjs.init('ZcBdExMHYZWXCPkyu');
+      let response = await emailjs.send("service_ku6ehwd","template_kkn0umg",{
+      from_name: this.myForm.value.name,
+      from_email: this.myForm.value.email,
+      message: this.myForm.value.message,
+      });
+      alert('Message has been send');
+      this.myForm.reset();
     }
+
+    // emailjs.send("service_ku6ehwd","template_kkn0umg",{
+    //   from_name: "Kamini Kuhad",
+    //   from_email: "kamini.kuhad09@gmail.com",
+    //   message: "I am here for the test",
+    //   });
 }

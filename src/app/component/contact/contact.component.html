@@ -27,7 +27,7 @@
       <div class="right-side">
         <div class="topic-text">{{contactInfo.contactHeading}}</div>
         <p>{{contactInfo.contactDescription}}</p>
-      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+      <form  action="javascript:void(0)" [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="input-box">
           <input type="text" placeholder="Enter your name" formControlName="name">
         </div>
